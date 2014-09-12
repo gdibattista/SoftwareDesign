@@ -11,14 +11,14 @@ Students should use this script to get familiar with the Olin College Software D
 author = amonmillner
 """
 
-def fortune():
+def fortuna():
    """
    This function allows a user to type a name and receive a fortune.
    The fortune selected from the list of possibilities depends on the
    length of the name or string that a user inputs.
    """
-   username = raw_input('what is your name?')
-   fortuner = ['you will soon get a big surprise', 'happiness will soon find you', 'things are looking up', 'a wish that you made in the past is about to come true', 'you will be greeted with a gift in the near future', 'the sky will fall on you tomorrow','if tomorrow is a chicken butt, what is a carrot do on Sundays?', 'Rainy Days and Mondays always get me down']
-   print fortuner[(len(username)-1)%len(fortuner)]
+   nombre = raw_input('Cual es tu nombre')
+   fortuna = ['Luego vas a recibir una gran sorpresa', 'Encontraras la felicidad', 'things are looking up', 'a wish that you made in the past is about to come true', 'you will be greeted with a gift in the near future', 'the sky will fall on you tomorrow']
+   print fortuna[(len(nombre)-1)%len(fortuna)]
 
-fortune()
+fortuna()
